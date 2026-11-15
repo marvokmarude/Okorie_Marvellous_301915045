@@ -86,7 +86,7 @@
     validationLevel: 'strict', validationAction: 'error'
   });
 
-  // Insert the four example events and show their IDs.
+  // Insert the four example events and show their IDs as defined.
   printjson(await db.getCollection("visit_events").insertMany([
     {
         "_id": "event_000001",
