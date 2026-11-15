@@ -20,7 +20,7 @@ Sharding partitions documents; replication copies them for availability. The sma
 
 ## Cloud deployment and recovery
 
-A real deployment would use private networking, authentication, least-privilege roles, TLS, monitoring and tested backups. Replication also copies accidental deletions, so it does not replace backups. Availability zones do not provide regional disaster recovery. No cloud service was provisioned and no failover, replication, sharding or recovery experiment was run for this discussion.
+A proper GitHub documentation workflow should include clear commit messages, structured branch management, access controls, code reviews and version tracking. Changes should be tested before merging to the main branch to reduce errors and maintain code quality. Documentation should also be updated alongside code changes to keep project information accurate. All changes should be traceable through the repository history, with no undocumented modifications or unverified releases.
 
 ## References
 
