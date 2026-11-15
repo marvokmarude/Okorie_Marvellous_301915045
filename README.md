@@ -2,7 +2,7 @@
 
 Marvellous Okorie · Student ID 301915045
 
-The portfolio uses fictional records for Home Health Visit Coordination.
+This repository presents a database portfolio built around a fictional Home Health Visit Coordination system. The system serves as a case study for exploring how relational and NoSQL databases can support the management of clients, caregivers, and scheduled home health visits. All records and sample data used throughout the portfolio are fictional and are included for demonstration and academic purposes only.
 
 - [Portfolio 1](portfolio-1-database-design/)
 - [Portfolio 2](portfolio-2-query-optimisation/)
