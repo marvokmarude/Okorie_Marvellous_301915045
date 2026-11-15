@@ -43,7 +43,7 @@ I proposed three MongoDB replica members across separate failure zones. The disc
 
 ## Individual reflection
 
-I kept client, caregiver, service_visit in separate tables so their details could be maintained without repeating them in every related record. A partial unique rule permits at most one visit per caregiver and scheduled_at where status is not cancelled. The constraint tests check this alongside the required values and record links. One issue illustrated by the two-session exercise is that both sessions can read the same value before either update is committed. Locking the row before reading preserves both increments. The index comparison also shows why I need to check the execution plan as well as the final answer: the same result can require different amounts of database work.
+The client, caregiver and service_visit records were organised into separate tables to minimise data duplication and make it easier to manage related information. A partial unique constraint was applied to prevent a caregiver from having more than one active visit scheduled at the same time. The constraint tests also verify mandatory fields and relationships between records. The two-session exercise demonstrates how concurrent transactions can read the same value before either update is committed, resulting in a lost update. Applying row-level locking before reading ensures that both increments are preserved. The index comparison further highlights the importance of reviewing query execution plans, as different indexing strategies can produce the same result while requiring different levels of database processing.
 
 ## AI-use declaration
 
